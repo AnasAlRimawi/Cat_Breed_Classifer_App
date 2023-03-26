@@ -3,7 +3,7 @@ from tensorflow import keras
 import tensorflow as tf
 import numpy as np
 
-model = keras.models.load_model('meow')
+model = keras.models.load_model('meow_efficientnet_finetune300')
 model.compile(loss='categorical_crossentropy',optimizer='adam', metrics=['acc'])
 classes = np.array(['Abyssinian', 'Bengal', 'Birman', 'Bombay', 'British', 'Egyptian', 'Maine', 'Persian', 'Ragdoll', 'Russian', 'Siamese', 'Sphynx'])
 
